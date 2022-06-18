@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+     margin: 0; 
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 18px;
+     font-family: Open Sans,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    /* line-height: 1.6; */
+    padding: 1em;
+}
+h2,h3 {
+    font-family: Poppins,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+main{ 
+    background-color: white; 
+   max-width: 1440px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+}
+img{
+     max-width: 100%;
+
+}
+.logo{
+max-width: 50%;
+    /* margin-right: 6em; 
+    margin-left: 0.5em;
+    margin-top: 2em;
+    float: left;*/
+}
+.first{
+    background-image: url(bg-hero-mobile.svg);
+    background-color: hsl(193, 100%, 96%,);
+    border: 0;
+    border-radius: 0;
+}
+header{
+    display: flex;
+ /* justify-content: center; */
+ /* align-items: center; */
+  /* padding: 0.625rem;  */
+ position: fixed;
+ top: 0;
+ left:0;
+ width: 100%;
+  z-index: 10;
+  max-width: 1440px; 
+  background-color: hsl(193, 100%, 96%,);
+}
+main div{
+     padding: 2em; 
+    border-radius: 15px;
+}
+.second,.third,.fourth{background: white;
+padding: 2em;
+text-align: center;
+border-radius: 12px;
+box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+margin: 2em;
+}
+main .one{
+    background: white;
+    color:hsl(192, 100%, 9%) ;
+    border: 0;
+    padding: 1em;
+    border-radius: 25px;
+    outline: 0;
+   margin-right: 2cm;
+   font-size: 8px;
+   font-weight: 700;
+     transition: duration 0.4s; 
+     display: inline-block;
+     width: 80px;   
+}
+.one:hover{
+    background:hsl(192, 100%, 9%) ;
+    color: white;
+}
+.two{
+    width: 80%;
+    padding: 1em; 
+    border-radius: 25px;
+    outline: 0;
+    border:0;
+    margin: auto;
+    background:  hsl(322, 100%, 66%) ;
+    color: white;
+    font-weight: 700;
+    transition-duration: 0.4s;
+    display: inline-block;
+    margin-top: 20px;
+}
+.two:hover{
+    background:rgb(115, 107, 107);
+    color:hsl(322, 100%, 66%) ;
+}
+    
+.header-button{
+    text-align: right;
+    flex-grow: 1;
+}
+
+.center-button{
+    text-align: center
+}
+footer{
+    background: hsl(192, 100%, 9%);
+}
+
+
+@media(min-width:375px){
+    main{ 
+        background-color:white; 
+       max-width: 1440px;}
+    .first{background-image: url(bg-hero-desktop.svg); 
+        background-color:hsl(193, 100%, 96%) ;
+
+    }
+    .first{
+        display: flex;
+    }
+.second,.third,.fourth{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.inner{
+    margin: auto;
+    text-align: center;
+}
+.one{
+    width: 120px;
+}
+.header-button{
+    text-align:right ;
+    /* align-self:flex-end; */
+    align-content: flex-end;
+    margin-left: 17cm;
+    flex-shrink: 1;
+}}
